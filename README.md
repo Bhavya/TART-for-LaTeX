@@ -7,15 +7,11 @@ How to Use
 --------------
 Using TART is pretty simple. First, include the TART class by putting `\documentclass{technical_assignment_report}` at the top of your tex file. Then set up your assignment by filling out the following fields:
 
-`\coursetitle {<course title>}` sets the course title for the report
-
-`\assignmentdate {<date>}` sets the due date of the report.
-
-`\assignmenttitle {<assignment title>}` sets the report title.
-
-`\groupnumber {<group number>}` sets your group number.
-
-`\groupmembers {<name1>}{<name2>}{<name3>}{<name4>}{<name5>}` sets your group members' names, user id numbers, or usernames. You don't need to fill in all the blanks, just make sure there are five sets of braces in all. For reference, see `technical_assignment_report.tex`. 
++ `\coursetitle {<course title>}` sets the course title for the report
++ `\assignmentdate {<date>}` sets the due date of the report.
++ `\assignmenttitle {<assignment title>}` sets the report title.
++ `\groupnumber {<group number>}` sets your group number.
++ `\groupmembers {<name1>}{<name2>}{<name3>}{<name4>}{<name5>}` sets your group members' names, user id numbers, or usernames. You don't need to fill in all the blanks, just make sure there are five sets of braces in all. For reference, see `technical_assignment_report.tex`. 
 
 
 List of Macros
