@@ -32,14 +32,12 @@
 \RequirePackage{titlesec}
 
 \titleformat{\section}         % Customise the \section command 
-  {\fontsize{10}{11}\bf\raggedright}	   % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
+  {\fontsize{10}{11}\bf\raggedright}	 
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
 
-\titleformat{\subsection}         % Customise the \section command 
-  {\fontsize{9}{11}\bf\raggedright}	   % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
+\titleformat{\subsection}      % Customise the \subsection command 
+  {\fontsize{11}{11}\slshape{\bfseries\raggedright}}	   
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
 
@@ -78,7 +76,7 @@
 \newcommand{\erroranalysis}{\section*{Error Analysis}}
 
 %%% STYLES
-\newcommand{\mnspace}[1]{{\ttfamily#1}}
+\newcommand{\mnspace}[1]{{\texttt{\bfseries#1}}}
 
 
 %%% FORMULAE
