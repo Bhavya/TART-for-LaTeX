@@ -32,29 +32,55 @@
 \RequirePackage{titlesec}
 
 \titleformat{\section}         % Customise the \section command 
-  {\bf\raggedright}			   % Make the \section headers large (\Large),
+  {\fontsize{10}{11}\bf\raggedright}	   % Make the \section headers large (\Large),
+                               % small capitals (\scshape) and left aligned (\raggedright)
+  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+  {}                           % Can be used to insert code before the heading
+
+\titleformat{\subsection}         % Customise the \section command 
+  {\fontsize{9}{11}\bf\raggedright}	   % Make the \section headers large (\Large),
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
 
 
+%%% MACROS
 \newcommand{\coursetitle}[1]{\newcommand{\course}{#1}}
 \newcommand{\assignmenttitle}[1]{\newcommand{\assignment}{#1}}
 \newcommand{\assignmentdate}[1]{\newcommand{\duedate}{#1}}
 \newcommand{\groupnumber}[1]{\newcommand{\group}{Group \##1}}
-\newcommand{\fulltitle}{\begin{center}%
-{{\Large \textbf{\course\\\assignment}}\\\duedate\\{\small\group}}\end{center}}%
+\newcommand{\groupmembers}[5]{\newcommand{\groupmem}{{#1  #2  #3  #4  #5}}}
+
+\newcommand{\fulltitle}{\begin{center}%	
+{{\fontsize{12}{12}\selectfont\textbf{\course\vspace{2pt}%
+\\\assignment}}\vspace{4pt}\\\duedate\vspace{15pt}\\{\fontsize{8.5}{9}%
+\selectfont\group\\\groupmem}}\end{center}}%
+
+\newcommand{\fulltitlegroupnum}{\begin{center}%
+{{\fontsize{12}{12}\selectfont\textbf{\course\vspace{2pt}%
+\\\assignment}}\vspace{4pt}\\\duedate\vspace{15pt}\\{\fontsize{8.5}{9}%
+\selectfont\group}}\end{center}}%
+
+\newcommand{\fulltitlegroupmem}{\begin{center}%
+{{\fontsize{12}{12}\selectfont\textbf{\course\vspace{2pt}%
+\\\assignment}}\vspace{4pt}\\\duedate\vspace{15pt}\\{\fontsize{8.5}{9}%
+\selectfont\groupmem}}\end{center}}%
 
 
-
+%%% SECTION TYPES
 \newcommand{\nsection}[1]{\section*{#1}}
 \newcommand{\ncitation}[1]{\newpage\section*{#1}}
 
+%%% HEADINGS
 \newcommand{\brief}{\section*{Brief}}
 \newcommand{\environment}{\section*{Environment}}
-\newcommand{\error}{\section*{Error Analysis}}
+\newcommand{\setup}{\section*{Setup}}
+\newcommand{\erroranalysis}{\section*{Error Analysis}}
 
+%%% STYLES
 \newcommand{\mnspace}[1]{{\ttfamily#1}}
 
+
+%%% FORMULAE
 \newcommand{\percenterror}[2]{$$\%Error = \frac{#1-#2}{#2}$$}
 

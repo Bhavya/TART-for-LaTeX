@@ -3,7 +3,6 @@
 \documentclass{technical_assignment_report} 
 
 %%% ASSIGNMENT PARAMETERS
-
 % Course identifier, e.g.: ECE
 \coursetitle {ABC 100}
 
@@ -16,6 +15,9 @@
 % Group Number, e.g. 22
 \groupnumber {01}
 
+% Group Members, up to 5. Can be userids, numbers, or names.
+\groupmembers {jsmith}{r2crusoe}{sholmes}{}{}
+
 
 \begin{document}
 
@@ -23,26 +25,63 @@
 
 \brief
 
-Your text goes here.
+This document was written to display the usefulness of the TART {\LaTeX} class. This class was initially written to format reports for the ECE 455 and ECE 429 courses at the University of Waterloo, in Waterloo, Ontario. The last time the TART class was updated was \today.
+
 
 \environment
 
-Your other text goes here.
+The class was written using MiKTeX, an implementation of {\TeX} for Windows, and Sublime Text 2, a simple text editor with tabs and syntax highlighting.
 
-\nsection{Procedure}
 
-More text. \mnspace{main()}.
+\nsection{List of Macros}
 
-\error
+\subsection*{Basic Macros}
+\begin{description}
+\item[\mnspace{\textbackslash course}] This displays the full course title as specified above. In this case, it displays {\course}.
+\item[\mnspace{\textbackslash assignment}] This displays the assignment title as specified above. In this case, it displays {\it\assignment}
+\item[\mnspace{\textbackslash duedate}] This displays the due date as specified above. In this case, it displays {\duedate}
+\item[\mnspace{\textbackslash group}] This displays the group number as specified above. In this case, it displays {\group}
+\item[\mnspace{\textbackslash groupmem}] This displays the groupmembers as specified above. In this case, it displays {\it\groupmem}
+\item[\mnspace{\textbackslash fulltitlegroupnum}] This displays the title of the assignment with the course number, assignment title, date, and group number.
+\item[\mnspace{\textbackslash fulltitlegroupmem}] This displays the title of the assignment with the course number, assignment title, date, and group members.
+\item[\mnspace{\textbackslash fulltitle}] This displays the title of the assignment with the course number, assignment title, date, group number, and group members.
+\end{description}
 
+\subsection*{Section Types}
+\begin{description}
+\item[\mnspace{\textbackslash nsection}] This creates a section with supressed numbering.
+\item[\mnspace{\textbackslash ncitation}] This creates a section with supressed numbering on a new page. Ideally should be used for citations or glossaries (see the {\bf Source Code} section of this document).
+\end{description}
+
+\subsection*{Headings and Default Text Snippets}
+\begin{description}
+\item[\mnspace{\textbackslash brief}] Creates a \lq{}Brief\rq{} section, as seen at the top of this document.
+\item[\mnspace{\textbackslash setup}]  Creates a \lq{}Setup\rq{} section.
+\item[\mnspace{\textbackslash environment}] Creates an \lq{}Environment\rq{} section.
+\item[\mnspace{\textbackslash erroranalysis}] Creates an \lq{}Error Analysis\rq{} section.
+\end{description}
+
+\subsection*{Styles}
+\begin{description}
+\item[\mnspace{\textbackslash mnspace}] Uses a nice monospace font for code references or numbers, such as \mnspace{main();} or \mnspace{0xFFFF}.
+\end{description}
+
+\subsection*{Formulae}
+\begin{description}
+\item[\mnspace{\textbackslash percenterror\{<differing-num>\}\{<base-num>\}}] This displays the the percent error formula. 
+\end{description}
+
+\erroranalysis
+No real error analysis here. Just a preview of the formulae listed in the {\bf Formulae} subsection above.
 \percenterror{2}{1.5}
 
-More text.
+
 
 \ncitation{Source Code}
+{\bf main.c - our source code \assignment}
 \begin{verbatim}
 public static void main( void ) {
-	// NOP
+    // NOP
 }
 \end{verbatim}
 
