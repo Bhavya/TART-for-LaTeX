@@ -21,7 +21,6 @@ Your basic `.tex` file should look something like:
 
 	\documentclass{technical_assignment_report} 
 
-	%%% ASSIGNMENT PARAMETERS
 	\coursetitle {ECE 100}
 	\assignmentdate {\today}
 	\assignmenttitle {Lab \#1 Report}
@@ -46,7 +45,7 @@ Your basic `.tex` file should look something like:
 		Your results text.
 	\end{document}
 
-You have a couple of options with the title: `fulltitle` currently renders the title with both the group number and the group members. `fulltitlegroupnum` omits the group members, while `fulltitlegroupmem` omits the group number.
+You have a couple of options with the title. `\fulltitle` currently renders the title with both the group number and the group members. `\fulltitlegroupnum` omits the group members, while `\fulltitlegroupmem` omits the group number.
 
 If the current formatting of the title doesn't suit your needs, you can always just set your `\title` and `\author` the way you would with a normal `.tex` document; `\maketitle` and `\maketitlepage` are still supported.
 
@@ -64,3 +63,20 @@ date, and group number.
 date, and group members.
 + `\fulltitle` This displays the title of the assignment with the course number, assignment title, date,
 group number, and group members.
+
+### Section Types
++ `\nsection` This creates a section with supressed numbering.
++ `\ncitation` This creates a section with supressed numbering on a new page. Ideally should be used for citations, results, or glossaries.
+
+### Headings and Default Text Snippets
++ `\brief` Creates a `Brief ' section.
++ `\setup` Creates a `Setup' section.
++ `\environment` Creates an `Environment' section.
++ `\erroranalysis` Creates an `Error Analysis' section.
+
+### Styles
++ `\mnspace` Uses a nice monospace font for code references or numbers.
+
+## Formulae
+Some common formulae. Right now this is the only one I could think of to add, but please file an issue if you can think of more commonly used formulae that you'd like to have included.
++ `\percenterror {<differing-num>}{<base-num>}` This displays the the percent error formula.
