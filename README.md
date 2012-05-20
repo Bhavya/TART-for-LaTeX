@@ -5,7 +5,7 @@ The TART class was initially written to format lab reports for the ECE 455 and E
 
 How to Use
 --------------
-Using TART is pretty simple. First, include the TART class by putting `\documentclass{technical_assignment_report}` at the top of your tex file. Then set up your assignment by filling out the following fields:
+Using TART is pretty simple. First, include the TART class by putting `\documentclass{technical_assignment_report}` at the top of your tex file. After this, you can set up your assignment by filling out the following fields:
 
 + `\coursetitle {<course title>}` sets the course title for the report
 + `\assignmentdate {<date>}` sets the due date of the report.
@@ -13,6 +13,39 @@ Using TART is pretty simple. First, include the TART class by putting `\document
 + `\groupnumber {<group number>}` sets your group number.
 + `\groupmembers {<name1>}{<name2>}{<name3>}{<name4>}{<name5>}` sets your group members' names, user id numbers, or usernames. You don't need to fill in all the blanks, just make sure there are five sets of braces in all. For reference, see `technical_assignment_report.tex`. 
 
+You're now set! You can now `\begin{document}`.
+
+Setting up your Assignment
+---------------------------
+Your basic `.tex` file should look something like:
+`
+\documentclass{technical_assignment_report} 
+
+%%% ASSIGNMENT PARAMETERS
+\coursetitle {ECE 100}
+\assignmentdate {\today}
+\assignmenttitle {Lab \#1 Report}
+\groupnumber {22}
+\groupmembers {jsmith}{r2crusoe}{sholmes}{}{}
+
+\begin{document}
+	\fulltitle
+	\brief
+	Your brief text.
+
+	\setup %or \environment
+	Your setup or environment text.
+
+	\nsection{Some Section Heading}
+	Your section text.
+
+	\erroranalysis
+	Your error text.
+
+	\ncitation{Results}
+	Your results text.
+\end{document}
+`
 
 List of Macros
 --------------
