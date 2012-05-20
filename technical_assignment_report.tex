@@ -31,15 +31,17 @@
 
 %%% END Article customizations
 
-%%% DEFINITIONS Do not touch
+%%% DEFINITIONS : Please do not touch!
 \def\groupmembers#1#2{{#1 - #2}}
 \def\group#1{{Group \##1}}
-\def\finaltitle#1#2#3#4{\begin{center}{{\Large \textbf{#1\\#2}}\\#3\\{\small#4}}\end{center}}
+\def\fulltitle#1#2#3#4{\begin{center}{{\Large \textbf{#1\\#2}}\\#3\\{\small#4}}\end{center}}
 \def\brief{\section*{Brief}}
 \def\environment{\section*{Environment}}
+\def\error{\section*{Error Analysis}}
 \def\nsection#1{\section*{#1}}
-\def\nsource#1{\newpage\section*{#1}}
+\def\ncitation#1{\newpage\section*{#1}}
 
+%%% ASSIGNMENT PARAMETERS : You can touch this stuff.
 % Course identifier, e.g.: ECE
  \def\courseident {{ABC}} 
 % Course number, e.g.: 100
@@ -49,10 +51,10 @@
 % Group Number, e.g. 22
 \def\groupnumber{{01}}
 
-
-
-% You can modify this
+% Again, don't touch these.
 \def\fullcourse{{\courseident} {\coursenumber}}
+
+% Comment and uncomment as you want.
 \def\assignmentauthors{\groupmembers{Bhavya Kashyap}{Casey Banner}}
 % Uncomment this if you also want to include group number
 %\def\assignmentauthors{\groupmembers{Bhavya Kashyap}{Casey Banner}\\ \group{\groupnumber}} 
@@ -60,7 +62,7 @@
 
 \begin{document}
 
-\finaltitle{\fullcourse}{\assignmenttitle}{\today}{\assignmentauthors}
+\fulltitle{\fullcourse}{\assignmenttitle}{\today}{\assignmentauthors}
 
 \brief
 
@@ -68,13 +70,17 @@ Your text goes here.
 
 \environment
 
-Your text goes here.
+Your other text goes here.
 
-\nsection{Error Analysis}
+\nsection{Procedure}
 
 More text.
 
-\nsource{Source Code}
+\error
+
+More text.
+
+\ncitation{Source Code}
 \begin{verbatim}
 public static void main( void ) {
 	// NOP
