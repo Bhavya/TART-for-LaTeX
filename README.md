@@ -15,37 +15,37 @@ Using TART is pretty simple. First, include the TART class by putting `\document
 
 You're now set! You can now `\begin{document}`.
 
-Setting up your Assignment
----------------------------
+Setting up a Basic Assignment
+------------------------------
 Your basic `.tex` file should look something like:
-`
-\documentclass{technical_assignment_report} 
 
-%%% ASSIGNMENT PARAMETERS
-\coursetitle {ECE 100}
-\assignmentdate {\today}
-\assignmenttitle {Lab \#1 Report}
-\groupnumber {22}
-\groupmembers {jsmith}{r2crusoe}{sholmes}{}{}
+	\documentclass{technical_assignment_report} 
 
-\begin{document}
-	\fulltitle
-	\brief
-	Your brief text.
+	%%% ASSIGNMENT PARAMETERS
+	\coursetitle {ECE 100}
+	\assignmentdate {\today}
+	\assignmenttitle {Lab \#1 Report}
+	\groupnumber {22}
+	\groupmembers {jsmith}{r2crusoe}{sholmes}{}{}
 
-	\setup %or \environment
-	Your setup or environment text.
+	\begin{document}
+		\fulltitle
+		\brief
+		Your brief text.
 
-	\nsection{Some Section Heading}
-	Your section text.
+		\setup %or \environment
+		Your setup or environment text.
 
-	\erroranalysis
-	Your error text.
+		\nsection{Some Section Heading}
+		Your section text.
 
-	\ncitation{Results}
-	Your results text.
-\end{document}
-`
+		\erroranalysis
+		Your error text.
+
+		\ncitation{Results}
+		Your results text.
+	\end{document}
+
 
 List of Macros
 --------------
