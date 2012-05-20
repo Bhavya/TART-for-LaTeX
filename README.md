@@ -46,6 +46,9 @@ Your basic `.tex` file should look something like:
 		Your results text.
 	\end{document}
 
+You have a couple of options with the title: `fulltitle` currently renders the title with both the group number and the group members. `fulltitlegroupnum` omits the group members, while `fulltitlegroupmem` omits the group number.
+
+If the current formatting of the title doesn't suit your needs, you can always just set your `\title` and `\author` the way you would with a normal `.tex` document; `\maketitle` and `\maketitlepage` are still supported.
 
 List of Macros
 --------------
