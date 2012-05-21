@@ -3,9 +3,9 @@ TART: A Technical Assignment/Report Template for LaTeX
 
 The TART class was initially written to format lab reports for the ECE 455 and ECE 429 courses at the University of Waterloo, in Waterloo, Ontario. The class was written using MiKTeX, an implementation of TEX for Windows.
 
-How to Use
---------------
-Using TART is pretty simple. First, include the TART class by putting `\documentclass{technical_assignment_report}` at the top of your tex file. After this, you can set up your assignment by filling out the following fields:
+Setting up a Basic Assignment
+------------------------------
+Using TART is pretty simple, even for a beginner TeX user. First, throw the TART class `technical_assignment_report.cls` in the same directory as your `.tex` file. Secondly, include the TART class by putting `\documentclass{technical_assignment_report}` at the top of your tex file. After this, you can set up your assignment by filling out the following fields:
 
 + `\coursetitle {<course title>}` sets the course title for the report
 + `\assignmentdate {<date>}` sets the due date of the report.
@@ -13,11 +13,7 @@ Using TART is pretty simple. First, include the TART class by putting `\document
 + `\groupnumber {<group number>}` sets your group number.
 + `\groupmembers {<name1>}{<name2>}{<name3>}{<name4>}{<name5>}` sets your group members' names, user id numbers, or usernames. You don't need to fill in all the blanks, just make sure there are five sets of braces in all. For reference, see `technical_assignment_report.tex`. 
 
-You're now set! You can now `\begin{document}`.
-
-Setting up a Basic Assignment
-------------------------------
-Your basic `.tex` file should look something like:
+You're now set! Your basic `.tex` file should look something like:
 
 	\documentclass{technical_assignment_report} 
 
@@ -77,6 +73,6 @@ group number, and group members.
 ### Styles
 + `\mnspace` Uses a nice monospace font for code references or numbers.
 
-## Formulae
+### Formulae
 Some common formulae. Right now this is the only one I could think of to add, but please file an issue if you can think of more commonly used formulae that you'd like to have included.
 + `\percenterror {<differing-num>}{<base-num>}` This displays the the percent error formula.
