@@ -49,7 +49,7 @@ List of Macros
 --------------
 ### Basic Macros
 + `\course` This displays the full course title as specified.
-+ `'assignment` This displays the assignment title as specifed. 
++ `\assignment` This displays the assignment title as specifed. 
 + `\duedate` This displays the due date as specified. 
 + `\group` This displays the group number as specified. 
 + `\groupmem` This displays the groupmembers as specified. Up to 5 are allowed by the definition function. 
