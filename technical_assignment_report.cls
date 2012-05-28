@@ -7,7 +7,7 @@
 
 %%% PAGE DIMENSIONS
 \usepackage{geometry} 		% to change the page dimensions
-\geometry{a4paper}		% or letterpaper (US) or a5paper or....
+\geometry{letterpaper}		% or a4paper or a5paper or.... 
 \geometry{margin=1in} 		% for example, change the margins to 2 inches all round
 
 \usepackage{graphicx} 		% support the \includegraphics command and options
